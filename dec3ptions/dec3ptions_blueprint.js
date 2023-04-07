@@ -1,4 +1,4 @@
-const dec3ptions_blueprint = [
+[
   
     { "id": String(atob("ZGVjM3B0aW9uc18xX3NwZWNpZmlj")) /*dec3ptions_1_specific*/, "function": async function() { var weapon_id_choice = String(prompt("Which weapon, in the weapon list, do you want to get?")); var weapon_amt_coice = Number(prompt("How many do you want to get?")); var n = await sync.async_get("w_"+weapon_id_choice) || 0; sync.async_set("w_"+weapon_id_choice, n+weapon_amt_coice); dagger_selection.init() } },
     { "id": String(atob("ZGVjM3B0aW9uc18xX3JhcGlkU3BlY2lmaWM=")) /*dec3ptions_1_rapidSpecific*/, "function": async function() { var rapid_weapon_id_choice = String(prompt("Which weapon, in the weapon list, do you want to get?")); setInterval(async () => { var n = await sync.async_get("w_"+rapid_weapon_id_choice) || 0; await sync.async_set("w_"+rapid_weapon_id_choice, n+1); await dagger_selection.init(); }, 10) } },
@@ -26,6 +26,4 @@ const dec3ptions_blueprint = [
     { "id": String(atob("ZGVjM3B0aW9uc183X3dlYXBvbmxpc3Q=")) /*dec3ptions_7_weaponlist*/, "function": function() { alert('starter_sword\nspear1\nkitchen_knife\nspear2\nbullet\nbanana\nshort_dagger\nkatana\ncool1\npixel1\ndiaknife\ncarrotknife\naxe\nbattle_axe\nclaw\neye_piercer\nlong_axe\nmace\nrocket\nstaff\nwolverine\nlongsword\nbroom\nspeedsword\nshield\npendulum\nslow_pendulum\nlong_pendulum\nbutterfly\nlol_fist\nsuperfast\ntiny_fast_dagger\nwearable\n'); } },
     { "id": String(atob("ZGVjM3B0aW9uc183X2luZmluaXRlVGhyb3c=")) /*dec3ptions_7_infiniteThrow*/, "function": function() { setInterval(() => {for (const blade of action_manager.daggers) { action_manager.activate_dagger(blade); }}, 1); } },
   
-];
-
-module.exports = dec3ptions_blueprint;
+]
