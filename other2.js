@@ -1,13 +1,23 @@
-//
-const key = sync.key("xp");
-const val = 999999999;
-var saveObject = {[key]: val};;
+let dec3ptions_blueprint = await fetch('https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint.js') 
+  .then(response => response.text()); 
+  console.log(dec3ptions_blueprint);
 
-chrome.storage.local.set(saveObject, function(){
-    webext.record_set(key, val);
-});
 
-//
-const dec3ptions_config = await fetch('https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_config.json')
-  .then(response => response.json());
-console.log(dec3ptions_config);
+const url = 'https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint.js';
+
+fetch(url)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.text();
+  })
+  .then(text => {
+    const script = new Function(`module.exports = ${text}`);
+    const data = script();
+    const dec3ptions_blueprint = data;
+    console.log(dec3ptions_blueprint);
+  })
+  .catch(error => {
+    console.error('Error fetching file:', error);
+  });
