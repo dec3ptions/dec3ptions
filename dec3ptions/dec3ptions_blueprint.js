@@ -1,4 +1,1 @@
-[
-    {"id": "coems"},
-    {"id": "amabatublow"}
-]
+[  {"id": "coems"},  {"id": "amabatublow"}]
