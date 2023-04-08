@@ -1,5 +1,6 @@
 async function main() {
     var id_input = String(prompt("Which weapon, in the weapon list, do you want to get?"));
+    return id_input;
 };
 
 async function repeat(id_input) {
