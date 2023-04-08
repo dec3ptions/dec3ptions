@@ -1,7 +1,6 @@
 {
 
-  "developer": testing,
-
+  "developer": false,
   "keybind": "Q"
 
 }
