@@ -11,6 +11,8 @@
 /* dec3ptions_blueprint: */ let dec3ptions_blueprint; fetch("https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint.json").then(response => response.json()).then(data => { dec3ptions_blueprint = eval(data) });
 
 /* screen_dec3ptions btns: */
+var intervalIds = [];
+
 setTimeout(() => {
   for (const btn in dec3ptions_blueprint) {
     $("#" + dec3ptions_blueprint[btn].id).click(function () { 
@@ -25,22 +27,20 @@ setTimeout(() => {
 
       } else {
 
-        var main_response;
-        var repeat_response;
+        //var main_response;
+        //var repeat_response;
 
         fetch(`https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/${dec3ptions_blueprint[btn].id}.js`)
           .then(response => response.text())
           .then(script => { 
             const main = new Function(script + '\nreturn main;')(); 
-            main_response = main();
-            console.log(main_response);
-          })
-          .then(script => { 
+            const main_response = main();
+            console.log(String(main_response));
+
             const repeat = new Function(script + '\nreturn repeat;')(); 
-            repeat_response = repeat();
+            repeat_response = repeat(main_response);
 
           })
-        
         
 
       };
