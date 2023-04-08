@@ -1,29 +1,29 @@
-[
+{
  
-  { "id": "dec3ptions_1_specific", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_1_specific.js"},
-  { "id": "dec3ptions_1_rapidSpecific", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_1_rapidSpecific.js"},
-  { "id": "dec3ptions_1_level", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_1_level.js"},
-  { "id": "dec3ptions_1_rapidLevel", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_1_rapidLevel.js"},
-  { "id": "dec3ptions_1_999x", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_1_999x.js"},
+  "dec3ptions_1_specific": { "id": "dec3ptions_1_specific", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_1_specific.js"},
+  "dec3ptions_1_rapidSpecific": { "id": "dec3ptions_1_rapidSpecific", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_1_rapidSpecific.js"},
+  "dec3ptions_1_level": { "id": "dec3ptions_1_level", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_1_level.js"},
+  "dec3ptions_1_rapidLevel": { "id": "dec3ptions_1_rapidLevel", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_1_rapidLevel.js"},
+  "dec3ptions_1_999x": { "id": "dec3ptions_1_999x", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_1_999x.js"},
   
-  { "id": "dec3ptions_2_dagger", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_2_dagger.js"},
-  { "id": "dec3ptions_2_loadout", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_2_loadout.js"},
-  { "id": "dec3ptions_2_random", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_2_random.js"},
-  { "id": "dec3ptions_2_unequipall", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_2_unequipall.js"},
+  "dec3ptions_2_dagger": { "id": "dec3ptions_2_dagger", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_2_dagger.js"},
+  "dec3ptions_2_loadout": { "id": "dec3ptions_2_loadout", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_2_loadout.js"},
+  "dec3ptions_2_random": { "id": "dec3ptions_2_random", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_2_random.js"},
+  "dec3ptions_2_unequipall": { "id": "dec3ptions_2_unequipall", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_2_unequipall.js"},
 
-  { "id": "dec3ptions_3_infinite", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_3_infinite.js"},
-  { "id": "dec3ptions_3_free", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_3_free.js"},
+  "dec3ptions_3_infinite": { "id": "dec3ptions_3_infinite", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_3_infinite.js"},
+  "dec3ptions_3_free": { "id": "dec3ptions_3_free", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_3_free.js"},
 
-  { "id": "dec3ptions_4_set", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_4_set.js"},
-  { "id": "dec3ptions_4_get", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_4_get.js"},
+  "dec3ptions_4_set": { "id": "dec3ptions_4_set", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_4_set.js"},
+  "dec3ptions_4_get": { "id": "dec3ptions_4_get", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_4_get.js"},
 
-  { "id": "dec3ptions_5_instant", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_5_instant.js"},
-  { "id": "dec3ptions_5_infinite", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_5_infinite.js"},
-  { "id": "dec3ptions_5_custom", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_5_custom.js"},
+  "dec3ptions_5_instant": { "id": "dec3ptions_5_instant", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_5_instant.js"},
+  "dec3ptions_5_infinite": { "id": "dec3ptions_5_infinite", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_5_infinite.js"},
+  "dec3ptions_5_custom": { "id": "dec3ptions_5_custom", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_5_custom.js"},
   
-  { "id": "dec3ptions_6_play", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_6_play.js"},
+  "dec3ptions_6_play": { "id": "dec3ptions_6_play", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_6_play.js"},
 
-  { "id": "dec3ptions_7_weaponlist", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_7_weaponlist.js"},
-  { "id": "dec3ptions_7_infiniteThrow", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_7_infiniteThrow.js"}
+  "dec3ptions_7_weaponlist": { "id": "dec3ptions_7_weaponlist", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_7_weaponlist.js"},
+  "dec3ptions_7_infiniteThrow": { "id": "dec3ptions_7_infiniteThrow", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_7_infiniteThrow.js"}
 
-]
+}

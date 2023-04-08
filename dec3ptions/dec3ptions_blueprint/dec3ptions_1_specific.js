@@ -1,1 +1,3 @@
-console.log("yipee");
+function epic() {
+    console.log("yipee");
+};
