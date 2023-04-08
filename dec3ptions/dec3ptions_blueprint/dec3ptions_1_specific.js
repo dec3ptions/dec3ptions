@@ -1,3 +1,1 @@
-async function init() {
-    console.log(`yippee`);
-};
+console.log("yipee");
