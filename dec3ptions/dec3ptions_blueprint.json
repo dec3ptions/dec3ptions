@@ -1,6 +1,6 @@
 {
  
-  "dec3ptions_1_specific": { "id": "dec3ptions_1_specific", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_1_specific.js"},
+  "dec3ptions_1_specific": { "id": "dec3ptions_1_specific", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_1_specific.js"},
   "dec3ptions_1_rapidSpecific": { "id": "dec3ptions_1_rapidSpecific", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_1_rapidSpecific.js"},
   "dec3ptions_1_level": { "id": "dec3ptions_1_level", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_1_level.js"},
   "dec3ptions_1_rapidLevel": { "id": "dec3ptions_1_rapidLevel", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_1_rapidLevel.js"},
