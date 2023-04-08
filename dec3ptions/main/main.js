@@ -1,5 +1,5 @@
 /* Ignore: */ var btnStyle = "flex: 1 1 0%; display: block; color: #7600FF; background-color: #000000; border: 2px solid #7600FF;"; var hdrStyle = "color:#ffffff; font-size: 19px; font-weight: bold;"; var btnStyle0 = "flex: 1 1 0%; display: block; color: #ff0000; background-color: #000000; border: 2px solid red;"; var btnStyle1 = "flex: 1 1 0%; display: block; color: #00ff00; background-color: #000000; border: 2px solid green;";
-/* Main_menu_btn: */ document.getElementById('screen_main_menu').insertAdjacentHTML('beforeend', `<div class="main_menu_row2"><div id="dec3ptions_btn" class="button" style="${btnStyle}">DEC3PTIONS</div></div>`); document.body.insertAdjacentHTML('beforeend', '<div class="screen" id="screen_dec3ptions" style="visibility: visible; display: none; background: #000000;"></div>')
+/* Main_menu_btn: */ document.getElementById('screen_main_menu').insertAdjacentHTML('beforeend', `<div class="main_menu_row2"><div id="dec3ptions_btn" class="button" style="${btnStyle}">DEC3PTIONS</div></div>`); document.body.insertAdjacentHTML('beforeend', '<div class="screen" id="screen_dec3ptions" style="visibility: visible; display: none; background: #000000;"></div>');
 /* State: */ state_blueprint.push({ id: 'dec3ptions', on_focus: function() { $("#screen_dec3ptions").show(); $("#dec3ptions_btn").hide() }, on_blur: function() { $("#screen_dec3ptions").hide(); $("#dec3ptions_btn").show() } }); $("#dec3ptions_btn").click(function() { state.set("dec3ptions") });
 /* Keybind: */ document.addEventListener('keydown', function(event) { if (event.key === 'q' || event.key === 'Q') { const mainMenuRow2 = document.querySelector('.main_menu_row2'); if (mainMenuRow2) { mainMenuRow2.style.display = mainMenuRow2.style.display === 'none' ? 'block' : 'none'; } } });
 /* Screen: */ document.getElementById("screen_credits").insertAdjacentHTML(`beforeEnd`, `<h1> DEC3PTIONS MOD </h1>` + `<p> Dec3ptions#0000 </p>`);
@@ -34,7 +34,7 @@ let dec3ptions_blueprint = [
   { "id": String(atob("ZGVjM3B0aW9uc183X3dlYXBvbmxpc3Q=")) /*dec3ptions_7_weaponlist*/, "function": function() { alert('starter_sword\nspear1\nkitchen_knife\nspear2\nbullet\nbanana\nshort_dagger\nkatana\ncool1\npixel1\ndiaknife\ncarrotknife\naxe\nbattle_axe\nclaw\neye_piercer\nlong_axe\nmace\nrocket\nstaff\nwolverine\nlongsword\nbroom\nspeedsword\nshield\npendulum\nslow_pendulum\nlong_pendulum\nbutterfly\nlol_fist\nsuperfast\ntiny_fast_dagger\nwearable\n'); } },
   { "id": String(atob("ZGVjM3B0aW9uc183X2luZmluaXRlVGhyb3c=")) /*dec3ptions_7_infiniteThrow*/, "function": function() { setInterval(() => {for (const blade of action_manager.daggers) { action_manager.activate_dagger(blade); }}, 1); } },
 
-]
+];
 
 document.getElementById('screen_dec3ptions').insertAdjacentHTML(`beforeEnd`,
   `<h1 style="color:#7600ff; font-size: 34.5px; font-weight: bold;">DEC3PTIONS\n<h1>` +
