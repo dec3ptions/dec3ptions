@@ -3,15 +3,14 @@
 /* State: */ state_blueprint.push({ id: 'dec3ptions', on_focus: function() { $("#screen_dec3ptions").show(); $("#dec3ptions_btn").hide() }, on_blur: function() { $("#screen_dec3ptions").hide(); $("#dec3ptions_btn").show() } }); $("#dec3ptions_btn").click(function() { state.set("dec3ptions") });
 /* Keybind: */ document.addEventListener('keydown', function(event) { if (event.key === 'q' || event.key === 'Q') { const mainMenuRow2 = document.querySelector('.main_menu_row2'); if (mainMenuRow2) { mainMenuRow2.style.display = mainMenuRow2.style.display === 'none' ? 'block' : 'none'; } } });
 /* Screen: */ document.getElementById("screen_credits").insertAdjacentHTML(`beforeEnd`, `<h1> DEC3PTIONS MOD </h1>` + `<p> Dec3ptions#0000 </p>`);
-
 /* Config */ const dec3ptions_config = fetch('https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_config.json') .then(response => response.json()); console.log(dec3ptions_config);
 
 let dec3ptions_blueprint = [
   
   { "id": String(atob("ZGVjM3B0aW9uc18xX3NwZWNpZmlj")) /*dec3ptions_1_specific*/, "function": async function() { var weapon_id_choice = String(prompt("Which weapon, in the weapon list, do you want to get?")); var weapon_amt_coice = Number(prompt("How many do you want to get?")); var n = await sync.async_get("w_"+weapon_id_choice) || 0; sync.async_set("w_"+weapon_id_choice, n+weapon_amt_coice); dagger_selection.init() } },
   { "id": String(atob("ZGVjM3B0aW9uc18xX3JhcGlkU3BlY2lmaWM=")) /*dec3ptions_1_rapidSpecific*/, "function": async function() { var rapid_weapon_id_choice = String(prompt("Which weapon, in the weapon list, do you want to get?")); setInterval(async () => { var n = await sync.async_get("w_"+rapid_weapon_id_choice) || 0; await sync.async_set("w_"+rapid_weapon_id_choice, n+1); await dagger_selection.init(); }, 10) } },
-  { "id": String(atob("ZGVjM3B0aW9uc18xX2xldmVsYmFzZWQ=")) /*dec3ptions_1_levelbased*/, "function": function() { dagger_selection.reward_level_clear();console.clear();console.log('Opened!'); } },
-  { "id": String(atob("ZGVjM3B0aW9uc18xX3JhcGlkTGV2ZWxiYXNlZA==")) /*dec3ptions_1_rapidLevelbased*/, "function": function() { setInterval(() => {dagger_selection.reward_level_clear();console.clear();console.log('Opened!');}, 20); } },
+  { "id": String(atob("ZGVjM3B0aW9uc18xX2xldmVsYmFzZWQ=")) /*dec3ptions_1_level*/, "function": function() { dagger_selection.reward_level_clear();console.clear();console.log('Opened!'); } },
+  { "id": String(atob("ZGVjM3B0aW9uc18xX3JhcGlkTGV2ZWxiYXNlZA==")) /*dec3ptions_1_rapidLevel*/, "function": function() { setInterval(() => {dagger_selection.reward_level_clear();console.clear();console.log('Opened!');}, 20); } },
   { "id": String(atob("ZGVjM3B0aW9uc18xXzk5OXg=")) /*dec3ptions_1_999x*/, "function": function() { var daggers = [{"id": "starter_sword"}, {"id": "spear1"}, {"id": "kitchen_knife"}, {"id": "spear2"}, {"id": "bullet"}, {"id": "banana"}, {"id": "short_dagger"}, {"id": "katana"}, {"id": "cool1"}, {"id": "pixel1"}, {"id": "diaknife"}, {"id": "carrotknife"}, {"id": "axe"}, {"id": "battle_axe"}, {"id": "claw"}, {"id": "eye_piercer"}, {"id": "long_axe"}, {"id": "mace"}, {"id": "rocket"}, {"id": "staff"}, {"id": "wolverine"}, {"id": "longsword"}, {"id": "broom"}, {"id": "speedsword"}, {"id": "shield"}, {"id": "pendulum"}, {"id": "slow_pendulum"}, {"id": "long_pendulum"}, {"id": "butterfly"}, {"id": "lol_fist"}, {"id": "superfast"}, {"id": "tiny_fast_dagger"}, {"id": "wearable"}];for (let i = 0; i < daggers.length; i++) {sync.async_set("w_"+daggers[i].id, 999);};dagger_selection.init(); } },
 
   { "id": String(atob("ZGVjM3B0aW9uc18yX2RhZ2dlcg==")) /*dec3ptions_2_dagger*/, "function": function() { var option_equipDaggers_equipDagger = "";let choice_EQUIP_DAGGERS_DAGGER_weapon_id = prompt("Which weapon (in weaponList) to equip.", option_equipDaggers_equipDagger);if (choice_EQUIP_DAGGERS_DAGGER_weapon_id == null || choice_EQUIP_DAGGERS_DAGGER_weapon_id == "") {return} else {option_equipDaggers_equipDagger = choice_EQUIP_DAGGERS_DAGGER_weapon_id};dagger_selection.equip_dagger(option_equipDaggers_equipDagger); } },
@@ -42,8 +41,8 @@ document.getElementById('screen_dec3ptions').insertAdjacentHTML(`beforeEnd`,
   `<h1 style="${hdrStyle}">\n\nGET DAGGERS<h1>` +
   `<div class="button" id="dec3ptions_1_specific" style="${btnStyle}">Specific</div>` +
   `<div class="button" id="dec3ptions_1_rapidSpecific" style="${btnStyle}">{RAPID} Specific<div class="button" id="toggle dec3ptions_1_rapidSpecific" style="${btnStyle0}"></div></div>` +
-  `<div class="button" id="dec3ptions_1_levelbased" style="${btnStyle}">Level</div>` +
-  `<div class="button" id="dec3ptions_1_rapidLevelbased" style="${btnStyle}">{RAPID} Level<div class="button" id="toggle dec3ptions_1_rapidLevelbased" style="${btnStyle0}"></div></div>` +
+  `<div class="button" id="dec3ptions_1_level" style="${btnStyle}">Level</div>` +
+  `<div class="button" id="dec3ptions_1_rapidLevel" style="${btnStyle}">{RAPID} Level<div class="button" id="toggle dec3ptions_1_rapidLevelbased" style="${btnStyle0}"></div></div>` +
   `<div class="button" id="dec3ptions_1_999x" style="${btnStyle}">999X</div>` +
 
   `<h1 style="${hdrStyle}">\n\nEQUIP DAGGERS<h1>` +

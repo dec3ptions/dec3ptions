@@ -4,16 +4,25 @@
   { "id": "dec3ptions_1_rapidSpecific", "type": 1, "source": ""},
   { "id": "dec3ptions_1_level", "type": 0, "source": ""},
   { "id": "dec3ptions_1_rapidLevel", "type": 1, "source": ""},
+  { "id": "dec3ptions_1_999x", "type": 0, "source": ""},
   
-  { "id": "dec3ptions_1_specific", "type": 1, "source": ""},
-  { "id": "dec3ptions_1_specific", "type": 1, "source": ""},
-  { "id": "dec3ptions_1_specific", "type": 1, "source": ""},
-  { "id": "dec3ptions_1_specific", "type": 1, "source": ""},
-  { "id": "dec3ptions_1_specific", "type": 1, "source": ""},
-  { "id": "dec3ptions_1_specific", "type": 1, "source": ""},
-  { "id": "dec3ptions_1_specific", "type": 1, "source": ""},
-  { "id": "dec3ptions_1_specific", "type": 1, "source": ""},
-  { "id": "dec3ptions_1_specific", "type": 1, "source": ""},
-  { "id": "dec3ptions_1_specific", "type": 1, "source": ""}
+  { "id": "dec3ptions_2_dagger", "type": 0, "source": ""},
+  { "id": "dec3ptions_2_loadout", "type": 0, "source": ""},
+  { "id": "dec3ptions_2_random", "type": 0, "source": ""},
+  { "id": "dec3ptions_2_unequipall", "type": 1, "source": ""},
+
+  { "id": "dec3ptions_3_infinite", "type": 1, "source": ""},
+  { "id": "dec3ptions_3_free", "type": 0, "source": ""},
+
+  { "id": "dec3ptions_4_set", "type": 0, "source": ""},
+  { "id": "dec3ptions_4_Get", "type": 0, "source": ""},
+
+  { "id": "dec3ptions_5_instant", "type": 0, "source": ""},
+  { "id": "dec3ptions_5_infinite", "type": 1, "source": ""},
+  { "id": "dec3ptions_5_custom", "type": 0, "source": ""},
+  
+  { "id": "dec3ptions_6_play", "type": 0, "source": ""},
+
+  { "id": "dec3ptions_5_custom", "type": 0, "source": ""}
 
 ]
