@@ -1,3 +1,3 @@
-let dec3ptions_hub = await fetch('https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/main/main.js') 
+let textEval = await fetch('https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/blueprint/dec3ptions_1_specific.js') 
   .then(response => response.text());
-  .then(data => eval(data))
+  eval(textEval);
