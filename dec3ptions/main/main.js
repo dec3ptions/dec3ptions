@@ -40,16 +40,6 @@ setTimeout(() => {
           const repeat = new Function(script + '\nreturn repeat;')(); 
           repeat_response = repeat(main_response);
         });
-      
-      
-      
-      // assuming 'inputPromise' is the Promise object returned from your input function
-      
-      input.then(function(result) {
-        console.log(result); // prints 'claw'
-      }).catch(function(error) {
-        console.error(error); // handle any errors
-      });
 
       
 
