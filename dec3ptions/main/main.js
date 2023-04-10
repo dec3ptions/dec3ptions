@@ -13,43 +13,47 @@
 /* screen_dec3ptions btns: */
 var intervalIds = [];
 
+var main;
+var main_response;
+
+var input;
+
 setTimeout(() => {
   for (const btn in dec3ptions_blueprint) {
     $("#" + dec3ptions_blueprint[btn].id).click(function () { 
 
-
-
-      if (dec3ptions_blueprint[btn].type === 0) {
-
-        fetch(`https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/${dec3ptions_blueprint[btn].id}.js`)
+      fetch(`https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/${dec3ptions_blueprint[btn].id}.js`)
           .then(response => response.text())
-          .then(script => { const main = new Function(script + '\nreturn main;')(); main();});
-
-      } else {
-
-        //var main_response;
-        //var repeat_response;
-
-        fetch(`https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/${dec3ptions_blueprint[btn].id}.js`)
-          .then(response => response.text())
-          .then(script => { 
-            const main = new Function(script + '\nreturn main;')(); 
-            const main_response = main();
-            console.log(String(main_response));
-
-            const repeat = new Function(script + '\nreturn repeat;')(); 
-            repeat_response = repeat(main_response);
-
-          })
-        
-
-      };
+          .then(script => { main = new Function(script + '\nreturn main;')(); main_response = main();});
+      
 
       if (dec3ptions_blueprint[btn].type === 0) { return };
 
+      //var main_response;
+      //var repeat_response;
 
+      fetch(`https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/${dec3ptions_blueprint[btn].id}.js`)
+        .then(response => response.text())
+        .then(script => { 
+          console.log(main_response);
+          main_response = input;
+          const repeat = new Function(script + '\nreturn repeat;')(); 
+          repeat_response = repeat(main_response);
+        });
+      
+      
+      
+      // assuming 'inputPromise' is the Promise object returned from your input function
+      
+      input.then(function(result) {
+        console.log(result); // prints 'claw'
+      }).catch(function(error) {
+        console.error(error); // handle any errors
+      });
 
+      
 
      });
   };
 }, 500)
+
