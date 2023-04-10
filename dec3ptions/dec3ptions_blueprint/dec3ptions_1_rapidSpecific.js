@@ -3,7 +3,7 @@ function main() {
     return String(id_input);
 };
 
-function repeat(id_input) {
+async function repeat(id_input) {
 
     var n = sync.async_get("w_" + id_input) || 0;
     sync.async_set("w_" + id_input, n + 1);
@@ -11,6 +11,6 @@ function repeat(id_input) {
     
 };
 
-function end() {
-    setTimeout(() => { dagger_selection.init() }, 500);
+async function end() {
+    await setTimeout(() => { dagger_selection.init() }, 500);
 };
