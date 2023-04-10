@@ -15,52 +15,30 @@ var intervalIds = [];
 
 var main;
 var main_response;
-
+var repeat;
+var repeat_response;
 
 setTimeout(() => {
   for (const btn in dec3ptions_blueprint) {
     $("#" + dec3ptions_blueprint[btn].id).click(function () { 
-
       
-      const source = `https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/${dec3ptions_blueprint[btn].id}.js`
 
 
-
-      if (dec3ptions_blueprint[btn].type === 0) { 
-
-
-
-        fetch(source)
-          .then(response => response.text())
-          .then(script => { 
-            main = new Function(script + '\nreturn main;')(); 
-            main_response = main();
-          });
-
-
-
-       } else {
-
-
-
-        fetch(source)
+      fetch(`https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/${dec3ptions_blueprint[btn].id}.js`)
         .then(response => response.text())
         .then(script => { 
           main = new Function(script + '\nreturn main;')(); 
           main_response = main();
 
-          console.log(main_response);
-          const repeat = new Function(script + '\nreturn repeat;')(); 
-          const repeat_response = repeat(main_response);
+          if (dec3ptions_blueprint[btn].type === 1) { 
+            console.log(main_response);
+            repeat = new Function(script + '\nreturn repeat;')(); 
+            repeat_response = repeat(main_response);
+          };
         });
-
-
-
-       }
 
 
 
      });
   };
-}, 500)
-
+}, 500);
