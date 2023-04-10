@@ -16,32 +16,49 @@ var intervalIds = [];
 var main;
 var main_response;
 
-var input;
 
 setTimeout(() => {
   for (const btn in dec3ptions_blueprint) {
     $("#" + dec3ptions_blueprint[btn].id).click(function () { 
 
-      fetch(`https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/${dec3ptions_blueprint[btn].id}.js`)
-          .then(response => response.text())
-          .then(script => { main = new Function(script + '\nreturn main;')(); main_response = main();});
       
+      const source = `https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/${dec3ptions_blueprint[btn].id}.js`
 
-      if (dec3ptions_blueprint[btn].type === 0) { return };
 
-      //var main_response;
-      //var repeat_response;
 
-      fetch(`https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/${dec3ptions_blueprint[btn].id}.js`)
+      if (dec3ptions_blueprint[btn].type === 0) { 
+
+
+
+        fetch(source)
+          .then(response => response.text())
+          .then(script => { 
+            main = new Function(script + '\nreturn main;')(); 
+            main_response = main();
+          });
+
+
+
+       } else {
+
+
+
+        fetch(source)
         .then(response => response.text())
         .then(script => { 
+          main = new Function(script + '\nreturn main;')(); 
+          main_response = main();
+
           console.log(main_response);
-          main_response = input;
           const repeat = new Function(script + '\nreturn repeat;')(); 
-          repeat_response = repeat(main_response);
+          const repeat_response = repeat(main_response);
         });
 
-      
+
+
+       }
+
+
 
      });
   };
