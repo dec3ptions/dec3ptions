@@ -38,6 +38,7 @@ async function main() {
     for (let i = 0; i < daggers.length; i++) {
         sync.async_set("w_"+daggers[i].id, 999);
     };
-    
-    dagger_selection.init(); 
+
+    await dagger_selection.init(); 
+    await alert("You now have 999 of every weapon in the game.");
 };
