@@ -6,5 +6,5 @@ async function main() {
     await sync.async_set("w_" + id_input, n + amt_input);
     await dagger_selection.init();
 
-    await alert(`You have recieved ${amt_input} weapons with the ID ${id_input}`);
+    await alert(`You have recieved ${amt_input} ${id_input}s`);
 };
