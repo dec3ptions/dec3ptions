@@ -12,6 +12,7 @@
   "dec3ptions_2_unequipall": { "id": "dec3ptions_2_unequipall", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_2_unequipall.js"},
 
   "dec3ptions_3_infinite": { "id": "dec3ptions_3_infinite", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_3_infinite.js"},
+  "dec3ptions_3_permaInfinite": { "id": "dec3ptions_3_permaInfinite", "type": 1, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_3_permaInfinite.js"},
   "dec3ptions_3_free": { "id": "dec3ptions_3_free", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_3_free.js"},
 
   "dec3ptions_4_set": { "id": "dec3ptions_4_set", "type": 0, "source": "https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/dec3ptions_4_set.js"},
