@@ -21,6 +21,7 @@ document.getElementById('screen_dec3ptions').insertAdjacentHTML(`beforeEnd`,
 
   `<h1 style="${hdrStyle}">\n\nUPGRADES<h1>` +
   `<div class="button" id="dec3ptions_3_infinite" style="${btnStyle}">Infinite<div class="button" id="toggle dec3ptions_3_infinite" style="${btnStyle0}"></div></div>` +
+  `<div class="button" id="dec3ptions_3_permaInfinite" style="${btnStyle}">{PERMANENT} Infinite</div>` +
   `<div class="button" id="dec3ptions_3_free" style="${btnStyle}">Free</div>` +
 
   `<h1 style="${hdrStyle}">\n\nXP<h1>` +
