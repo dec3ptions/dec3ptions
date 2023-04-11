@@ -19,28 +19,81 @@ var repeat;
 var repeat_response;
 
 setTimeout(() => {
-  for (const btn in dec3ptions_blueprint) {
-    $("#" + dec3ptions_blueprint[btn].id).click(function () { 
-      
+for (const btn in dec3ptions_blueprint) {
+    $('#' + dec3ptions_blueprint[btn].id).click(function() {
 
 
-      fetch(dec3ptions_blueprint[btn].source) //`https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/${dec3ptions_blueprint[btn].id}.js`
-        .then(response => response.text())
-        .then(script => { 
-          console.log(dec3ptions_blueprint[btn].source);
 
-          main = new Function(script + '\nreturn main;')(); 
-          main_response = main();
+        if (dec3ptions_blueprint[btn].type === 0) {
 
-          if (dec3ptions_blueprint[btn].type === 1) { 
-            console.log(main_response);
-            repeat = new Function(script + '\nreturn repeat;')(); 
-            repeat_response = repeat(main_response);
+          fetch(dec3ptions_blueprint[btn].source)
+          .then(response => response.text())
+          .then(f_main => {
+            var main2 = new Function(f_main + '\nreturn main;')(); 
+            var main_response2 = main2();
+          });
+          return;
+
+        };
+
+
+
+        if (intervalIds.find(obj => obj.id === dec3ptions_blueprint[btn].id)) {
+
+            var object = intervalIds.find(obj => obj.id === dec3ptions_blueprint[btn].id);
+            clearInterval(object.intervalId);
+            console.log(intervalIds);
+            intervalIds.splice(object, 1);
+            //dec3ptions_blueprint[btn].end
+
+        } else {
+
+            if (document.getElementById(`toggle ${dec3ptions_blueprint[btn].id}`).style.borderColor === "green") {
+              document.getElementById(`toggle ${dec3ptions_blueprint[btn].id}`).style.borderColor = "red";
+              return;
+            };
+
+            fetch(dec3ptions_blueprint[btn].source)
+              .then(response => response.text())
+              .then(f_main => {
+                main = new Function(f_main + '\nreturn main;')(); 
+                main_response = main();
+              });
+
+            var intervalId;
+            intervalId = setInterval(() => {
+              fetch(dec3ptions_blueprint[btn].source)
+                .then(response => response.text())
+                .then(f_repeat => {
+                  console.log(main_response);
+                  console.log(f_repeat);
+                  repeat = new Function(f_repeat + '\nreturn repeat;')(); 
+                  repeat_response = repeat(main_response);
+                });
+            }, 1);
+
+            intervalIds.push({
+                "id": dec3ptions_blueprint[btn].id,
+                "intervalId": intervalId
+            });
+            console.log(intervalId);
+
+        };
+
+
+
+        if (document.getElementById(`toggle ${dec3ptions_blueprint[btn].id}`)) {
+
+          var toggle = document.getElementById(`toggle ${dec3ptions_blueprint[btn].id}`);
+          if (toggle.style.borderColor === "red") {
+              toggle.style.borderColor = "green";
+          } else {
+              toggle.style.borderColor = "red";
           };
-        });
 
 
 
-     });
-  };
+        };
+    });
+};
 }, 500);

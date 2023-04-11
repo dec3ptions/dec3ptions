@@ -5,7 +5,7 @@ function main() {
 
 async function repeat(id_input) {
 
-    var n = sync.async_get("w_" + id_input) || 0;
+    var n = await sync.async_get("w_" + id_input) || 0;
     sync.async_set("w_" + id_input, n + 1);
     dagger_selection.init();
     
