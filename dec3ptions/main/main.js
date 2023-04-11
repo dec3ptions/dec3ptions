@@ -27,6 +27,8 @@ setTimeout(() => {
       fetch(`https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/${dec3ptions_blueprint[btn].id}.js`)
         .then(response => response.text())
         .then(script => { 
+          console.log(`https://raw.githubusercontent.com/dec3ptions/dec3ptions/hacks/dec3ptions/dec3ptions_blueprint/${dec3ptions_blueprint[btn].id}.js`);
+
           main = new Function(script + '\nreturn main;')(); 
           main_response = main();
 
