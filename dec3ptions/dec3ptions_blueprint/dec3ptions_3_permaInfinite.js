@@ -4,7 +4,7 @@ async function main() {
     
     if (b_input === "y") {
         
-        alert("Your upgrades have been permanently changed. To see your upgrades, go to the upgrades menu. If you want to reverse this action, you can reset your player data in the settings menu.");
+        alert("Your upgrades have been permanently changed.\n\nTo see your upgrades, go to the upgrades menu. If you want to reverse this action, you can reset your player data in the settings menu.");
         MAX_LEVEL = 999;
         await sync.async_set("damage",999);
         await sync.async_set("speed",99);
